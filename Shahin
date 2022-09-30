@@ -1,0 +1,26 @@
+"""mebleg=int(input("Gotureceyiniz meblegi AZN-le daxil edin:"))
+birilllik_faiz=mebleg+mebleg*0.1
+if mebleg >=10000:
+    print("1 il sonra oddeyeceyiniz mebleg:",birilllik_faiz)
+if mebleg <= 0:
+    print("Meblegi duzgun daxil edin !!!")
+elif mebleg < 10000:
+    print("10000-den ashagi mebleg goture bilmezsiniz !")
+elif birilllik_faiz < 11000:
+    print("Meblegi duzgun daxil edin")"""
+mebleg=int(input("Qoyacaginiz meblegi AZN-le daxil edin:"))
+if mebleg>=500:
+    muddet=int(input("Muddeti ay olaraq yazin: "))
+    if muddet == 12:
+        umumifaiz_geliri = mebleg * 0.06
+    elif muddet == 18:
+        umumifaiz_geliri = mebleg * 0.065
+    elif muddet == 24:
+        umumifaiz_geliri = mebleg * 0.07
+    elif muddet == 36:
+        umumifaiz_geliri = mebleg * 0.075
+    print("Umumi faiz geliri :", umumifaiz_geliri)
+if mebleg <=0:
+    print("Meblegi duzgun daxil edin")
+elif mebleg <500:
+    print("Minimal mebleg 500 AZN-dir")
